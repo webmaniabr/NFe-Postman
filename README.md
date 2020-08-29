@@ -6,7 +6,7 @@ Utilize a ferramenta Postman para realizar testes instântaneos na API da Webman
 
 ## Requisitos
   - Instalar Postman: [Download](https://www.getpostman.com/downloads/)
-  - Contrate um dos planos de Nota Fiscal Eletrônica da WebmaniaBR® a partir de R$29,90/mês. [Assine agora mesmo](https://webmaniabr.com/nota-fiscal-eletronica/)
+  - Contrate um dos planos de Nota Fiscal Eletrônica da WebmaniaBR® a partir de R$34,90/mês. [Assine agora mesmo](https://webmaniabr.com/nota-fiscal-eletronica/)
   
 ## URL Postman
 - **API de Nota Fiscal:** https://www.getpostman.com/collections/884d1f53ce9819a36a88
