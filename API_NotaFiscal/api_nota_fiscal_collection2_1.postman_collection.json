@@ -1,0 +1,884 @@
+{
+	"info": {
+		"_postman_id": "a28731fa-2028-47df-a182-0950441d79b4",
+		"name": "API de Nota Fiscal - WebmaniaBR®",
+		"description": "Nessa coleção existe exemplos de:\n\t* Cancelar Nota Fiscal\n\t* Carta de Correção\n\t* Consultar Nota Fiscal\n\t* Emissão de Nota Fiscal Armamentos\n\t* Emissão de Nota Fiscal Combustível\n\t* Emissão de Nota Fiscal Medicamentos\n\t* Emissão de Nota Fiscal Rastreabilidade\n\t* Emissão de Nota Fiscal Veiculos Novos\n\t* Emissão de Nota Fiscal\n\t* Emissão de Nota Fiscal de Ajuste\n\t* Complementar Nota Fiscal - Imposto\n\t* Complementar Nota Fiscal - Preco/Quantidade\n\t* Devolucao de Nota Fiscal\n\t* Inutilizar Nota Fiscal\n\t* Status Sefaz\n\t* Validade Certificado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cancelar Nota Fiscal",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"chave\":\"00000000000000000000000000000000000000000000\",\n\t\"motivo\":\"Cancelamento por motivos administrativos.\"\n}"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/cancelar/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"cancelar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Carta de Correção",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"chave\": \"00000000000000000000000000000000000000000000\",\n\t\"correcao\": \"O CFOP correto é 5.102 referente a revenda tributada no mesmo estado.\"\n}"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/cartacorrecao/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"cartacorrecao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Nota Fiscal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/consulta/?chave=00000000000000000000000000000000000000000000",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"consulta",
+						""
+					],
+					"query": [
+						{
+							"key": "chave",
+							"value": "00000000000000000000000000000000000000000000"
+						},
+						{
+							"key": "ambiente",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Para verificar os dias que falta para expirar o Certificado A1."
+			},
+			"response": []
+		},
+		{
+			"name": "Emissão Nota Fiscal Armamentos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ID\": 1137,\n  \"url_notificacao\": \"http://meudominio.com/retorno.php\",\n  \"operacao\": 1,\n  \"natureza_operacao\": \"Venda de produção do estabelecimento\",\n  \"modelo\": 1,\n  \"finalidade\": 1,\n  \"ambiente\": 2,\n  \"cliente\": {\n     \"cpf\": \"000.000.000-00\",\n     \"nome_completo\": \"Nome do Cliente\",\n     \"endereco\": \"Av. Brg. Faria Lima\",\n     \"complemento\": \"Escritório\",\n     \"numero\": 1000,\n     \"bairro\": \"Itaim Bibi\",\n     \"cidade\": \"São Paulo\",\n     \"uf\": \"SP\",\n     \"cep\": \"00000-000\",\n     \"telefone\": \"(00) 0000-0000\",\n     \"email\": \"nome@email.com\"\n  },\n  \"produtos\": [\n     {\n        \"nome\": \"Nome do produto\",\n        \"codigo\": \"nome-do-produto\",\n        \"ncm\": \"6109.10.00\",\n        \"cest\": \"28.038.00\",\n        \"quantidade\": 3,\n        \"unidade\": \"UN\",\n        \"peso\": \"0.800\",\n        \"origem\": 0,\n        \"subtotal\": \"44.90\",\n        \"total\": \"134.70\",\n        \"classe_imposto\": \"REF1000\",\n        \"armamentos\": {\n            \"tipo\": 0,\n            \"serie_arma\": \"000000\",\n            \"serie_cano\": \"000000\",\n            \"descricao\": \"...\"\n        }\n     }\n  ],\n  \"pedido\": {\n     \"pagamento\": 0,\n     \"presenca\": 2,\n     \"modalidade_frete\": 0,\n     \"frete\": \"12.56\",\n     \"desconto\": \"10.00\",\n     \"total\": \"174.60\"\n  }\n}\n"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/emissao/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"emissao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Emissão Nota Fiscal Combustivel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ID\": 1137,\n  \"url_notificacao\": \"http://meudominio.com/retorno.php\",\n  \"operacao\": 1,\n  \"natureza_operacao\": \"Venda de produção do estabelecimento\",\n  \"modelo\": 1,\n  \"finalidade\": 1,\n  \"ambiente\": 2,\n  \"cliente\": {\n     \"cpf\": \"000.000.000-00\",\n     \"nome_completo\": \"Nome do Cliente\",\n     \"endereco\": \"Av. Brg. Faria Lima\",\n     \"complemento\": \"Escritório\",\n     \"numero\": 1000,\n     \"bairro\": \"Itaim Bibi\",\n     \"cidade\": \"São Paulo\",\n     \"uf\": \"SP\",\n     \"cep\": \"00000-000\",\n     \"telefone\": \"(00) 0000-0000\",\n     \"email\": \"nome@email.com\"\n  },\n  \"produtos\": [\n     {\n        \"nome\": \"Nome do produto\",\n        \"codigo\": \"nome-do-produto\",\n        \"ncm\": \"6109.10.00\",\n        \"cest\": \"28.038.00\",\n        \"quantidade\": 3,\n        \"unidade\": \"UN\",\n        \"peso\": \"0.800\",\n        \"origem\": 0,\n        \"subtotal\": \"44.90\",\n        \"total\": \"134.70\",\n        \"classe_imposto\": \"REF1000\",\n        \"combustiveis\": {\n           \"codigo_anp\": \"000001\",\n           \"descricao_anp\": \"Descrição do produto conforme ANP\",\n           \"uf_consumo\": \"SP\"\n        }\n     }\n  ],\n  \"pedido\": {\n     \"pagamento\": 0,\n     \"presenca\": 2,\n     \"modalidade_frete\": 0,\n     \"frete\": \"12.56\",\n     \"desconto\": \"10.00\",\n     \"total\": \"174.60\"\n  }\n}\n"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/emissao/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"emissao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Emissão Nota Fiscal Medicamentos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ID\": 1137,\n  \"url_notificacao\": \"http://meudominio.com/retorno.php\",\n  \"operacao\": 1,\n  \"natureza_operacao\": \"Venda de produção do estabelecimento\",\n  \"modelo\": 1,\n  \"finalidade\": 1,\n  \"ambiente\": 2,\n  \"cliente\": {\n     \"cpf\": \"000.000.000-00\",\n     \"nome_completo\": \"Nome do Cliente\",\n     \"endereco\": \"Av. Brg. Faria Lima\",\n     \"complemento\": \"Escritório\",\n     \"numero\": 1000,\n     \"bairro\": \"Itaim Bibi\",\n     \"cidade\": \"São Paulo\",\n     \"uf\": \"SP\",\n     \"cep\": \"00000-000\",\n     \"telefone\": \"(00) 0000-0000\",\n     \"email\": \"nome@email.com\"\n  },\n  \"produtos\": [\n     {\n        \"nome\": \"Nome do produto\",\n        \"codigo\": \"nome-do-produto\",\n        \"ncm\": \"6109.10.00\",\n        \"cest\": \"28.038.00\",\n        \"quantidade\": 3,\n        \"unidade\": \"UN\",\n        \"peso\": \"0.800\",\n        \"origem\": 0,\n        \"subtotal\": \"44.90\",\n        \"total\": \"134.70\",\n        \"classe_imposto\": \"REF1000\",\n        \"medicamento\": {\n            \"codigo_anvisa\": \"1234567891234\",\n            \"pmc\": \"10.00\"\n        },\n        \"rastro\": {\n            \"lote\": \"000001\",\n            \"quantidade\": \"100\",\n            \"data_fabricacao\": \"2018-01-01\",\n            \"data_validade\": \"2020-01-01\"\n        }\n     }\n  ],\n  \"pedido\": {\n     \"pagamento\": 0,\n     \"presenca\": 2,\n     \"modalidade_frete\": 0,\n     \"frete\": \"12.56\",\n     \"desconto\": \"10.00\",\n     \"total\": \"174.60\"\n  }\n}\n"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/emissao/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"emissao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Emissão Nota Fiscal Rastreabilidade",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ID\": 1137,\n  \"url_notificacao\": \"http://meudominio.com/retorno.php\",\n  \"operacao\": 1,\n  \"natureza_operacao\": \"Venda de produção do estabelecimento\",\n  \"modelo\": 1,\n  \"finalidade\": 1,\n  \"ambiente\": 2,\n  \"cliente\": {\n     \"cpf\": \"000.000.000-00\",\n     \"nome_completo\": \"Nome do Cliente\",\n     \"endereco\": \"Av. Brg. Faria Lima\",\n     \"complemento\": \"Escritório\",\n     \"numero\": 1000,\n     \"bairro\": \"Itaim Bibi\",\n     \"cidade\": \"São Paulo\",\n     \"uf\": \"SP\",\n     \"cep\": \"00000-000\",\n     \"telefone\": \"(00) 0000-0000\",\n     \"email\": \"nome@email.com\"\n  },\n  \"produtos\": [\n     {\n        \"nome\": \"Nome do produto\",\n        \"codigo\": \"nome-do-produto\",\n        \"ncm\": \"6109.10.00\",\n        \"cest\": \"28.038.00\",\n        \"quantidade\": 3,\n        \"unidade\": \"UN\",\n        \"peso\": \"0.800\",\n        \"origem\": 0,\n        \"subtotal\": \"44.90\",\n        \"total\": \"134.70\",\n        \"classe_imposto\": \"REF1000\",\n        \"rastro\": {\n           \"lote\": \"000001\",\n           \"quantidade\": \"100\",\n           \"data_fabricacao\": \"2018-01-01\",\n           \"data_validade\": \"2020-01-01\"\n        }\n     }\n  ],\n  \"pedido\": {\n     \"pagamento\": 0,\n     \"presenca\": 2,\n     \"modalidade_frete\": 0,\n     \"frete\": \"12.56\",\n     \"desconto\": \"10.00\",\n     \"total\": \"174.60\"\n  }\n}\n"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/emissao/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"emissao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Emissão Nota Fiscal Veiculos Novos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ID\": 1137,\n  \"url_notificacao\": \"http://meudominio.com/retorno.php\",\n  \"operacao\": 1,\n  \"natureza_operacao\": \"Venda de produção do estabelecimento\",\n  \"modelo\": 1,\n  \"finalidade\": 1,\n  \"ambiente\": 2,\n  \"cliente\": {\n     \"cpf\": \"000.000.000-00\",\n     \"nome_completo\": \"Nome do Cliente\",\n     \"endereco\": \"Av. Brg. Faria Lima\",\n     \"complemento\": \"Escritório\",\n     \"numero\": 1000,\n     \"bairro\": \"Itaim Bibi\",\n     \"cidade\": \"São Paulo\",\n     \"uf\": \"SP\",\n     \"cep\": \"00000-000\",\n     \"telefone\": \"(00) 0000-0000\",\n     \"email\": \"nome@email.com\"\n  },\n  \"produtos\": [\n     {\n        \"nome\": \"Nome do produto\",\n        \"codigo\": \"nome-do-produto\",\n        \"ncm\": \"6109.10.00\",\n        \"cest\": \"28.038.00\",\n        \"quantidade\": 3,\n        \"unidade\": \"UN\",\n        \"peso\": \"0.800\",\n        \"origem\": 0,\n        \"subtotal\": \"44.90\",\n        \"total\": \"134.70\",\n        \"classe_imposto\": \"REF1000\",\n        \"veiculos_novos\": {\n           \"tipo_operacao\": \"1\",\n           \"chassi\": \"00000000000000000\",\n           \"cor\": \"A1\",\n           \"cor_descricao\": \"Descrição da Cor\",\n           \"cv\": \"100\",\n           \"cilindrada\": \"1000\",\n           \"peso_liquido\": \"2.5000\",\n           \"peso_bruto\": \"2.5000\",\n           \"serie\": \"00001\",\n           \"tipo_combustivel\": \"16\",\n           \"numero_motor\": \"00001\",\n           \"cmt\": \"2.000\",\n           \"dist\": \"150\",\n           \"ano_modelo\": \"2019\",\n           \"ano_fabricacao\": \"2018\",\n           \"tipo_pintura\": \"Tipo de Pintura\",\n           \"tipo_veiculo\": \"06\",\n           \"especie_veiculo\": \"1\",\n           \"vin\": \"N\",\n           \"condicao_veiculo\": \"1\",\n           \"marca_modelo\": \"00001\",\n           \"cor_denatran\": \"04\",\n           \"lotacao\": \"5\",\n           \"restricao\": \"0\"\n        }\n     }\n  ],\n  \"pedido\": {\n     \"pagamento\": 0,\n     \"presenca\": 2,\n     \"modalidade_frete\": 0,\n     \"frete\": \"12.56\",\n     \"desconto\": \"10.00\",\n     \"total\": \"174.60\"\n  }\n}\n"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/emissao/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"emissao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Emissão Nota Fiscal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\": 1137,\n\t\"url_notificacao\": \"http://meudominio.com/retorno.php\",\n\t\"operacao\": 1,\n\t\"natureza_operacao\": \"Venda de produção do estabelecimento\",\n\t\"modelo\": 1,\n\t\"finalidade\": 1,\n\t\"ambiente\": 2,\n\t\"cliente\": {\n\t\t\"cpf\": \"000.000.000-00\",\n\t\t\"nome_completo\": \"Nome do Cliente\",\n\t\t\"endereco\": \"Av. Brg. Faria Lima\",\n\t\t\"complemento\": \"Escritório\",\n\t\t\"numero\": 1000,\n\t\t\"bairro\": \"Itaim Bibi\",\n\t\t\"cidade\": \"São Paulo\",\n\t\t\"uf\": \"SP\",\n\t\t\"cep\": \"00000-000\",\n\t\t\"telefone\": \"(00) 0000-0000\",\n\t\t\"email\": \"nome@email.com\"\n\t},\n\t\"produtos\": [{\n\t\t\"nome\": \"Nome do produto\",\n\t\t\"codigo\": \"nome-do-produto\",\n\t\t\"ncm\": \"6109.10.00\",\n\t\t\"cest\": \"28.038.00\",\n\t\t\"quantidade\": 3,\n\t\t\"unidade\": \"UN\",\n\t\t\"peso\": \"0.800\",\n\t\t\"origem\": 0,\n\t\t\"subtotal\": \"44.90\",\n\t\t\"total\": \"134.70\",\n\t\t\"classe_imposto\": \"REF1000\"\n\t}, \n\t{\n\t\t\"nome\": \"Nome do produto\",\n\t\t\"codigo\": \"nome-do-produto\",\n\t\t\"ncm\": \"6109.10.00\",\n\t\t\"cest\": \"28.038.00\",\n\t\t\"quantidade\": 1,\n\t\t\"unidade\": \"UN\",\n\t\t\"peso\": \"0.800\",\n\t\t\"origem\": 0,\n\t\t\"subtotal\": \"29.90\",\n\t\t\"total\": \"29.90\",\n\t\t\"classe_imposto\": \"REF1000\"\n\t}],\n\t\"pedido\": {\n\t\t\"pagamento\": 0,\n\t\t\"presenca\": 2,\n\t\t\"modalidade_frete\": 0,\n\t\t\"frete\": \"12.56\",\n\t\t\"desconto\": \"10.00\",\n\t\t\"total\": \"174.60\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/emissao/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"emissao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Emissao Nota Fiscal de Ajuste",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY",
+						"type": "text"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET",
+						"type": "text"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN",
+						"type": "text"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"operacao\": 1,\n\"natureza_operacao\": \"CREDITO ICMS S/ ESTOQUE\", \n\"codigo_cfop\": 2.949,\n\"valor_icms\": 1000.00,\n\"ambiente\": 2,\n\"cliente\": {\n    \"cpf\" : \"000.000.000-00\",\n    \"nome_completo\" : \"Nome completo\",\n    \"endereco\" : \"Av. Brg. Faria Lima\",\n    \"complemento\" : \"Escritório\",\n    \"numero\" : 1000,\n    \"bairro\" : \"Itaim Bibi\",\n    \"cidade\" : \"São Paulo\",\n    \"uf\" : \"SP\",\n    \"cep\" : \"00000-000\",\n    \"telefone\" : \"(00) 0000-0000\",\n    \"email\" : \"nome@email.com\"\n  }\n}\n"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/ajuste/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"ajuste",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complementar Nota Fiscal Imposto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"type": "text",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"type": "text",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"type": "text",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"type": "text",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"type": "text",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nfe_referenciada\": \"00000000000000000000000000000000000000000000\",\n    \"operacao\": 1,\n    \"natureza_operacao\": \"Natureza da operação\",\n    \"ambiente\": 2,\n    \"cliente\": {\n        \"cpf\": \"000.000.000-00\",\n        \"nome_completo\": \"Nome completo\",\n        \"endereco\": \"Av. Brg. Faria Lima\",\n        \"complemento\": \"Escritorio\",\n        \"numero\": 1000,\n        \"bairro\": \"Itaim Bibi\",\n        \"cidade\": \"São Paulo\",\n        \"uf\": \"SP\",\n        \"cep\": \"00000-000\",\n        \"telefone\": \"(00) 0000-0000\",\n        \"email\": \"nome@email.com\"\n    },\n    \"produtos\": [\n        {\n            \"nome\": \"Nome do produto\",\n            \"codigo\": \"nome-do-produto\",\n            \"ncm\": \"6109.10.00\",\n            \"cest\": \"28.038.00\",\n            \"quantidade\": 1,\n            \"unidade\": \"UN\",\n            \"peso\": \"0.500\",\n            \"origem\": 0,\n            \"subtotal\": \"29.90\",\n            \"total\": \"29.90\",\n            \"tributos_federais\": \"10.00\",\n            \"tributos_estaduais\": \"10.00\",\n            \"impostos\": {\n                \"icms\": {\n                    \"codigo_cfop\": \"6.102\",\n                    \"situacao_tributaria\": \"102\"\n                },\n                \"ipi\": {\n                    \"situacao_tributaria\": \"99\",\n                    \"codigo_enquadramento\": \"999\",\n                    \"aliquota\": \"0.00\"\n                },\n                \"pis\": {\n                    \"situacao_tributaria\": \"99\",\n                    \"aliquota\": \"0.00\"\n                },\n                \"cofins\": {\n                    \"situacao_tributaria\": \"99\",\n                    \"aliquota\": \"0.00\"\n                }\n            }\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/complementar/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"complementar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complementar Nota Fiscal Preco/Quantidade",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"type": "text",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"type": "text",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"type": "text",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"type": "text",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"type": "text",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nfe_referenciada\": \"00000000000000000000000000000000000000000000\",\n\t\"operacao\": 1,\n\t\"natureza_operacao\": \"Natureza da operação\",\n\t\"ambiente\": 2,\n\t\"cliente\": {\n\t\t\"cpf\": \"000.000.000-00\",\n\t\t\"nome_completo\": \"Nome completo\",\n\t\t\"endereco\": \"Av. Brg. Faria Lima\",\n\t\t\"complemento\": \"Escritorio\",\n\t\t\"numero\": 1000,\n\t\t\"bairro\": \"Itaim Bibi\",\n\t\t\"cidade\": \"São Paulo\",\n\t\t\"uf\": \"SP\",\n\t\t\"cep\": \"00000-000\",\n\t\t\"telefone\": \"(00) 0000-0000\",\n\t\t\"email\": \"nome@email.com\"\n\t},\n\t\"produtos\": [{\n\t\t\"nome\": \"Nome do produto\",\n\t\t\"codigo\": \"nome-do-produto\",\n\t\t\"ncm\": \"6109.10.00\",\n\t\t\"cest\": \"28.038.00\",\n\t\t\"quantidade\": 1,\n\t\t\"unidade\": \"UN\",\n\t\t\"origem\": 0,\n\t\t\"subtotal\": \"29.90\",\n\t\t\"total\": \"29.90\",\n\t\t\"impostos\": {\n\t\t\t\"icms\": {\n\t\t\t\t\"codigo_cfop\": \"6.102\",\n\t\t\t\t\"situacao_tributaria\": \"102\"\n\t\t\t}\n\t\t}\n\t}]\n}"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/complementar/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"complementar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devolução de Nota Fiscal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"chave\":\"00000000000000000000000000000000000000000000\",\n\t\"natureza_operacao\":\"Devolução de venda de produção do estabelecimento\",\n\t\"codigo_cfop\":\"1.202\",\n\t\"produtos\": [ 2, 3 ],\n\t\"ambiente\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/devolucao/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"devolucao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inutilizar Nota Fiscal",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sequencia\":\"101-109\",\n\t\"motivo\":\"Inutilização por problemas técnicos.\",\n\t\"ambiente\":\"2\",\n\t\"serie\":\"99\",\n\t\"modelo\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/inutilizar/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"inutilizar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status Sefaz",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/sefaz/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"sefaz",
+						""
+					]
+				},
+				"description": "Para verificar se o Sefaz está Online ou Offline"
+			},
+			"response": []
+		},
+		{
+			"name": "Validade Certificado A1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Consumer-Key",
+						"value": "SEU_CONSUMER_KEY"
+					},
+					{
+						"key": "X-Consumer-Secret",
+						"value": "SEU_CONSUMER_SECRET"
+					},
+					{
+						"key": "X-Access-Token",
+						"value": "SEU_ACCESS_TOKEN"
+					},
+					{
+						"key": "X-Access-Token-Secret",
+						"value": "SEU_ACCESS_TOKEN_SECRET"
+					}
+				],
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/nfe/certificado/",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"nfe",
+						"certificado",
+						""
+					]
+				},
+				"description": "Para verificar os dias que falta para expirar o Certificado A1."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

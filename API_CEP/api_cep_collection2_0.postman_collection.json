@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "2ab4aff2-c25a-457a-bda6-3460f06cc5f9",
+		"name": "API de CEP - WebmaniaBR®",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consulta CEP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/cep/80540-180/?app_key=SEU_APP_KEY&app_secret=SEU_APP_SECRET",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"cep",
+						"80540-180",
+						""
+					],
+					"query": [
+						{
+							"key": "app_key",
+							"value": "SEU_APP_KEY"
+						},
+						{
+							"key": "app_secret",
+							"value": "SEU_APP_SECRET"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Requisições",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/cep/requests/?app_key=SEU_APP_KEY&app_secret=SEU_APP_SECRET",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"cep",
+						"requests",
+						""
+					],
+					"query": [
+						{
+							"key": "app_key",
+							"value": "SEU_APP_KEY"
+						},
+						{
+							"key": "app_secret",
+							"value": "SEU_APP_SECRET"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta IP's",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Token",
+						"value": "SEU_TOKEN",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/cep/tokens/?app_key=SEU_APP_KEY&app_secret=SEU_APP_SECRET",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"cep",
+						"tokens",
+						""
+					],
+					"query": [
+						{
+							"key": "app_key",
+							"value": "SEU_APP_KEY"
+						},
+						{
+							"key": "app_secret",
+							"value": "SEU_APP_SECRET"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar IP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Token",
+						"value": "SEU_TOKEN",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ip\": \"000.000.000.000\"\r\n}"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/cep/tokens/?app_key=SEU_APP_KEY&app_secret=SEU_APP_SECRET",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"cep",
+						"tokens",
+						""
+					],
+					"query": [
+						{
+							"key": "app_key",
+							"value": "SEU_APP_KEY"
+						},
+						{
+							"key": "app_secret",
+							"value": "SEU_APP_SECRET"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir IP",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Token",
+						"value": "SEU_TOKEN",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ip\": \"000.000.000.000\"\r\n}"
+				},
+				"url": {
+					"raw": "https://webmaniabr.com/api/1/cep/tokens/?app_key=SEU_APP_KEY&app_secret=SEU_APP_SECRET",
+					"protocol": "https",
+					"host": [
+						"webmaniabr",
+						"com"
+					],
+					"path": [
+						"api",
+						"1",
+						"cep",
+						"tokens",
+						""
+					],
+					"query": [
+						{
+							"key": "app_key",
+							"value": "SEU_APP_KEY"
+						},
+						{
+							"key": "app_secret",
+							"value": "SEU_APP_SECRET"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -2,15 +2,15 @@
   <img src="https://wmbr.s3.amazonaws.com/img/logo_webmaniabr_github.png">
 </p>
 
-Utilize a ferramenta Postman para realizar testes instântaneos na API da WebmaniaBR e obter exemplos de integração em mais de 15 linguagens de programação. É só importar e testar, veja como é simples.
+Utilize a ferramenta Postman para realizar testes instântaneos nas API's da WebmaniaBR e obter exemplos de integração em mais de 15 linguagens de programação. É só importar e testar, veja como é simples.
 
 ## Requisitos
   - Instalar Postman: [Download](https://www.getpostman.com/downloads/)
   - Contrate um dos planos de Nota Fiscal Eletrônica da WebmaniaBR® a partir de R$29,90/mês. [Assine agora mesmo](https://webmaniabr.com/nota-fiscal-eletronica/)
   
 ## URL Postman
-- **API de Nota Fiscal:** https://www.getpostman.com/collections/884d1f53ce9819a36a88
-- **API de CEP:** https://www.getpostman.com/collections/098aab9ff6514dd4c695
+- **API de Nota Fiscal:** https://www.getpostman.com/collections/d62dbbb01a977b12695f
+- **API de CEP:** https://www.getpostman.com/collections/618a106f39e6d1d4a694
 
 ## Instruções
 Com o postman instalado e aberto clique em *import*, que fica localizado na parte superior esquerdo, como na imagem abaixo:
@@ -19,7 +19,8 @@ Com o postman instalado e aberto clique em *import*, que fica localizado na part
   <img src="https://webmaniabr.com/wp-content/uploads/2019/05/postman_button_import_new.jpg">
 </p>
 
-Clique na opção *Import From Link* e insira a URL Postman no campo *"Enter a URL and press Import"* da API que deseja e clique em Import.
+Clique na opção *Import From Link* e insira a URL Postman no campo *"Enter a URL and press Import"* da API que deseja e clique em Import.<br>
+Você também pode realizar a importação pelas opções *File* e *Raw text*, utilizando os arquivos .json nas pastas API_CEP ou API_NotaFiscal.
 
 <p align="center">
   <img src="https://webmaniabr.com/wp-content/uploads/2019/05/postman_link_import_new.jpg">
