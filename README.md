@@ -12,7 +12,16 @@ Utilize a ferramenta Postman para realizar testes instântaneos nas API's da Web
 - **API de Nota Fiscal:** https://www.getpostman.com/collections/d62dbbb01a977b12695f
 - **API de CEP:** https://www.getpostman.com/collections/618a106f39e6d1d4a694
 
+## Vídeo explicativo
+
+Veja no vídeo a seguir como é fácil testar a API de Nota Fiscal da WebmaniaBR utilizando o Postman e Insomnia. Ou se preferir, você pode seguir as instruções logo abaixo.
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=eBSxSLgYJOk" target="_blank"><img src="./thumb_video.jpg" alt="Vídeo explicativo"></a>
+</p>
+
 ## Instruções
+
 Com o postman instalado e aberto clique em *import*, que fica localizado na parte superior esquerdo, como na imagem abaixo:
 
 <p align="center">
