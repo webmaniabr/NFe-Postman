@@ -2,7 +2,7 @@
   <img src="https://wmbr.s3.amazonaws.com/img/logo_webmaniabr_github2.png">
 </p>
 
-Utilize a ferramenta Postman para realizar testes instântaneos nas API's da WebmaniaBR e obter exemplos de integração em mais de 15 linguagens de programação. É só importar e testar, veja como é simples.
+Utilize a ferramenta Postman para realizar testes instântaneos nas API's da Webmania® e obter exemplos de integração em mais de 15 linguagens de programação. É só importar e testar, veja como é simples.
 
 ## Requisitos
   - Instalar Postman: [Download](https://www.getpostman.com/downloads/)
@@ -14,7 +14,7 @@ Utilize a ferramenta Postman para realizar testes instântaneos nas API's da Web
 
 ## Vídeo explicativo
 
-Veja no vídeo a seguir como é fácil testar a API de Nota Fiscal da WebmaniaBR utilizando o Postman e Insomnia. Ou se preferir, você pode seguir as instruções logo abaixo.
+Veja no vídeo a seguir como é fácil testar a API de Nota Fiscal da Webmania® utilizando o Postman e Insomnia. Ou se preferir, você pode seguir as instruções logo abaixo.
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=eBSxSLgYJOk" target="_blank"><img src="./thumb_video.jpg" alt="Vídeo explicativo"></a>
