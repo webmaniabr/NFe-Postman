@@ -9,6 +9,7 @@ Utilize a ferramenta Postman para realizar testes instântaneos nas API's da Web
   - Contrate um dos planos de Nota Fiscal Eletrônica da Webmania® (Teste 30 dias grátis). [Assine agora mesmo](https://webmaniabr.com/nota-fiscal-eletronica/)
   
 ## URL Postman
+- **API de Nota Fiscal de Serviço:** https://elements.getpostman.com/redirect?entityId=24508627-aeedbd58-46a2-4baa-b675-1976c0fbdc4b&entityType=collection
 - **API de Nota Fiscal:** https://www.getpostman.com/collections/d62dbbb01a977b12695f
 - **API de CEP:** https://www.getpostman.com/collections/618a106f39e6d1d4a694
 
@@ -25,38 +26,44 @@ Veja no vídeo a seguir como é fácil testar a API de Nota Fiscal da Webmania®
 Com o postman instalado e aberto clique em *import*, que fica localizado na parte superior esquerdo, como na imagem abaixo:
 
 <p align="center">
-  <img src="https://webmaniabr.com/wp-content/uploads/2019/05/postman_button_import_new.jpg">
+  <img src="https://wmbr.s3.amazonaws.com/img/github/postman/import_button.jpg">
 </p>
 
-Clique na opção *Import From Link* e insira a URL Postman no campo *"Enter a URL and press Import"* da API que deseja e clique em Import.<br>
-Você também pode realizar a importação pelas opções *File* e *Raw text*, utilizando os arquivos .json nas pastas API_CEP ou API_NotaFiscal.
+Clique na opção *Import* e insira a URL Postman no campo *"Enter a URL"* da API que deseja e clique em *"Continue"*.<br>
+Você também pode realizar a importação pelas opções *File* e *Raw text*, utilizando os arquivos .json nas pastas API_CEP, API_NotaFiscal ou API_NotaFiscalServico.
 
 <p align="center">
-  <img src="https://webmaniabr.com/wp-content/uploads/2019/05/postman_link_import_new.jpg">
+  <img src="https://wmbr.s3.amazonaws.com/img/github/postman/import_modal.jpg">
 </p>
 
 Pronto, o Postman cria automaticamente uma coleção com todos os exemplos de requisições da nossa API:
 
 <p align="center">
-  <img src="https://webmaniabr.com/wp-content/uploads/2019/05/postman_create_folder.jpg">
+  <img src="https://wmbr.s3.amazonaws.com/img/github/postman/requests.jpg">
 </p>
 
-Agora é só configurar suas credenciais de acesso para que as requisições funcionem, sem isso, não será possivel realizar os testes na REST API. As credenciais devem ser informados no Headers das requisições:
+Agora é só configurar suas credenciais de acesso para que as requisições funcionem, sem isso, não será possivel realizar os testes na REST API. Para a API 1.0 as credenciais devem ser informados no Headers das requisições:
 
 <p align="center">
-  <img src="https://webmaniabr.com/wp-content/uploads/2019/05/postman_headers_config.jpg">
+  <img src="https://wmbr.s3.amazonaws.com/img/github/postman/credenciais10.jpg">
+</p>
+
+Para a API da NFS-e, basta apenas informar o Token da API 2.0 nas váriaveis da collection do Postman:
+
+<p align="center">
+  <img src="https://wmbr.s3.amazonaws.com/img/github/postman/credenciais20.jpg">
 </p>
 
 Pronto seu Postman está pronto para enviar requisições via API, clique agora em **Send** e receba a resposta da nossa API.
 
 <p align="center">
-  <img src="https://webmaniabr.com/wp-content/uploads/2019/05/postman_button_send.jpg">
+  <img src="https://wmbr.s3.amazonaws.com/img/github/postman/send.jpg">
 </p>
 
 **Resposta:**
 
 <p align="center">
-  <img src="https://webmaniabr.com/wp-content/uploads/2019/05/postman_result.jpg">
+  <img src="https://wmbr.s3.amazonaws.com/img/github/postman/response.jpg">
 </p>
 
 ## Suporte
