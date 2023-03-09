@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "2ab4aff2-c25a-457a-bda6-3460f06cc5f9",
-		"name": "API de CEP - WebmaniaBR®",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"_postman_id": "a74d75ed-7c82-4376-98a0-beebebf699ff",
+		"name": "API de CEP e IBGE - Webmania®",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2938302"
 	},
 	"item": [
 		{

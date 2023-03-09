@@ -7,18 +7,19 @@ Utilize a ferramenta Postman para realizar testes instântaneos nas API's da Web
 ## Requisitos
   - Instalar Postman: [Download](https://www.getpostman.com/downloads/)
   - Contrate um dos planos de Nota Fiscal Eletrônica da Webmania® (Teste 30 dias grátis). [Assine agora mesmo](https://webmaniabr.com/nota-fiscal-eletronica/)
-  
-## URL Postman
-- **API de Nota Fiscal de Serviço:** https://elements.getpostman.com/redirect?entityId=24508627-aeedbd58-46a2-4baa-b675-1976c0fbdc4b&entityType=collection
-- **API de Nota Fiscal:** https://www.getpostman.com/collections/d62dbbb01a977b12695f
-- **API de CEP:** https://www.getpostman.com/collections/618a106f39e6d1d4a694
 
+## Workspace Postman
+Acesse o **Workspace Webmania®** e fique sempre atualizado: https://bit.ly/3mGuGKV
+
+## URL Postman
+- **API de Nota Fiscal:** https://api.postman.com/collections/2938302-1c4e3b72-df62-4114-91ed-0d9bf40d257f?access_key=PMAT-01GV3GCPX21K3YQVBAQRFS80N0
+- **API de CEP e IBGE:** https://api.postman.com/collections/2938302-a74d75ed-7c82-4376-98a0-beebebf699ff?access_key=PMAT-01GV3GF1CS46NA3XN7SKQEQRQ0
 ## Vídeo explicativo
 
 Veja no vídeo a seguir como é fácil testar a API de Nota Fiscal da Webmania® utilizando o Postman e Insomnia. Ou se preferir, você pode seguir as instruções logo abaixo.
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=eBSxSLgYJOk" target="_blank"><img src="./thumb_video.jpg" alt="Vídeo explicativo"></a>
+  <a href="https://www.youtube.com/watch?v=eBSxSLgYJOk" target="_blank"><img src="https://wmbr.s3.amazonaws.com/img/github/postman/thumb_video.jpg" alt="Vídeo explicativo"></a>
 </p>
 
 ## Instruções
