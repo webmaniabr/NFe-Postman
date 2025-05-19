@@ -6,7 +6,7 @@ Utilize a ferramenta Postman para realizar testes instântaneos nas API's da Web
 
 ## Requisitos
   - Instalar Postman: [Download](https://www.getpostman.com/downloads/)
-  - Contrate um dos planos de Nota Fiscal Eletrônica da Webmania® (Teste 30 dias grátis). [Assine agora mesmo](https://webmaniabr.com/nota-fiscal-eletronica/)
+  - Contrate um dos planos de Nota Fiscal Eletrônica da Webmania®). [Assine agora mesmo](https://webmaniabr.com/nota-fiscal-eletronica/)
 
 ## Workspace Postman
 Acesse o **Workspace Webmania®** e fique sempre atualizado: https://bit.ly/3mGuGKV
