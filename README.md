@@ -12,8 +12,8 @@ Utilize a ferramenta Postman para realizar testes instântaneos nas API's da Web
 Acesse o **Workspace Webmania®** e fique sempre atualizado: https://bit.ly/3mGuGKV
 
 ## URL Postman
-- **API de Nota Fiscal:** [https://api.postman.com/collections/2938302-1c4e3b72-df62-4114-91ed-0d9bf40d257f?access_key=PMAT-01GV3GCPX21K3YQVBAQRFS80N0](https://www.postman.com/grey-water-1853/workspace/webmania/collection/2938302-1c4e3b72-df62-4114-91ed-0d9bf40d257f?action=share&creator=2938302)
-- **API de CEP e IBGE:** [https://api.postman.com/collections/2938302-a74d75ed-7c82-4376-98a0-beebebf699ff?access_key=PMAT-01GV3GF1CS46NA3XN7SKQEQRQ0](https://www.postman.com/grey-water-1853/workspace/webmania/collection/2938302-a74d75ed-7c82-4376-98a0-beebebf699ff?action=share&creator=2938302)
+- **API de Nota Fiscal:** https://www.postman.com/grey-water-1853/workspace/webmania/collection/2938302-1c4e3b72-df62-4114-91ed-0d9bf40d257f?action=share&creator=2938302
+- **API de CEP e IBGE:** https://www.postman.com/grey-water-1853/workspace/webmania/collection/2938302-a74d75ed-7c82-4376-98a0-beebebf699ff?action=share&creator=2938302
 ## Vídeo explicativo
 
 Veja no vídeo a seguir como é fácil testar a API de Nota Fiscal da Webmania® utilizando o Postman e Insomnia. Ou se preferir, você pode seguir as instruções logo abaixo.
