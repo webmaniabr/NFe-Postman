@@ -2,6 +2,21 @@
   <img src="https://wmbr.s3.amazonaws.com/img/logo_webmaniabr_github2.png">
 </p>
 
+# NFe-Postman
+
+<!-- deprecation-notice:start -->
+> [!WARNING]
+> **Repositório descontinuado.** Esta integração legada não receberá novas funcionalidades, manutenção ou correções de segurança.
+>
+> Para novos testes e integrações, consulte a **[documentação atual da API](https://webmania.com.br/docs/)** e os **[SDKs Webmania](https://github.com/webmaniabr?tab=repositories&q=webmania-)**.
+
+**Integrações existentes:** este aviso não desativa a API nem exige migração imediata. O código e os arquivos desta versão permanecem disponíveis.
+
+**Migração:** revise os endpoints, a autenticação e os exemplos na documentação atual e valide as requisições em homologação antes de utilizá-las em produção.
+<!-- deprecation-notice:end -->
+
+---
+
 Utilize a ferramenta Postman para realizar testes instântaneos nas API's da Webmania® e obter exemplos de integração em mais de 15 linguagens de programação. É só importar e testar, veja como é simples.
 
 ## Requisitos
